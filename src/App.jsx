@@ -1,5 +1,6 @@
 import { usestate } from 'react';
 import 'src/App.css';
+export default App;
 
 function App(){
   const [list, setlist] = usestate([]);
@@ -40,7 +41,7 @@ function App(){
     }
 
     const recoveredDot = undid[undid.lenght -1];
-    setUndid((prev) =>{
+    setundid((prev) =>{
       const newArr = [...prev].slice(0, -1);
       return newArr;
     });
@@ -59,7 +60,5 @@ return (
         />
       ))}
     </div>
-  );
-}
-
-export default App;
+  )};
+}  
